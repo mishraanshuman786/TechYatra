@@ -39,8 +39,10 @@ const Navbar = () => {
                             {/* LOGO */}
 
                             <div className="flex flex-shrink-0 items-center border-right">
-                                <Link href="/" className='text-2xl sm:text-4xl font-semibold text-black'>
-                                   TECHYATRA
+                                <Link href="/" className='text-2xl sm:text-4xl font-semibold text-black flex items-center gap-1'>
+                                   <img src="/images/extraImages/logo.jpg" alt="logo" width={60} height={60} />
+                                   <div>TECHYATRA</div>
+                                   
                                 </Link>
                             </div>
 
