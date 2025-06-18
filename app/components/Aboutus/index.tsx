@@ -13,19 +13,19 @@ const Aboutdata: datatype[] = [
     {
         heading: "About us.",
         imgSrc: "/images/aboutus/imgOne.svg",
-        paragraph: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem',
+        paragraph: 'At TechYatra, we transform ideas into powerful software using modern technologies, intuitive UI/UX, and scalable architecture-helping startups and enterprises solve real-world problems through innovative digital solutions.',
         link: 'Learn more'
     },
     {
         heading: "Services.",
         imgSrc: "/images/aboutus/imgTwo.svg",
-        paragraph: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem',
+        paragraph: 'We build tailor-made software solutions that align with your unique business goals, helping you streamline operations, boost productivity, and stay ahead in a fast-changing digital world.',
         link: 'Learn more'
     },
     {
         heading: "Our Works.",
         imgSrc: "/images/aboutus/imgThree.svg",
-        paragraph: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem',
+        paragraph: 'Our work at TechYatra speaks for itself. Every project we build-be it a mobile app, web platform, or backend system-is driven by passion, purpose, and performance.',
         link: 'Learn more'
     },
 ]

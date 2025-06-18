@@ -14,40 +14,40 @@ interface DataType {
 }
 
 const postData: DataType[] = [
+    // {
+    //     name: "Robert Fox",
+    //     profession: 'CFO, Parkview Int.Ltd',
+    //     comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
+    //     imgSrc: '/images/testimonial/user1.svg',
+    // },
+    // {
+    // //     name: "Leslie Alexander",
+    // //     profession: 'CEO, Parkview Int.Ltd',
+    // //     comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
+    // //     imgSrc: '/images/testimonial/user2.svg',
+    // // },
     {
-        name: "Robert Fox",
-        profession: 'CEO, Parkview Int.Ltd',
-        comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
-        imgSrc: '/images/testimonial/user1.svg',
-    },
-    {
-        name: "Leslie Alexander",
-        profession: 'CEO, Parkview Int.Ltd',
-        comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
-        imgSrc: '/images/testimonial/user2.svg',
-    },
-    {
-        name: "Cody Fisher",
-        profession: 'CEO, Parkview Int.Ltd',
-        comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
+        name: "Ganga Paryawaran Solution",
+        profession: 'Business',
+        comment: 'They brought our vision to life digitally. Our initiatives are now more visible and accessible, thanks to the excellent web design team.',
         imgSrc: '/images/testimonial/user3.svg',
     },
     {
-        name: "Robert Fox",
-        profession: 'CEO, Parkview Int.Ltd',
-        comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
+        name: "Laddo Story",
+        profession: 'Business',
+        comment: 'From design to delivery, TechYatra made the process smooth and stress-free. Our customers now enjoy a seamless online shopping experience.',
         imgSrc: '/images/testimonial/user1.svg',
     },
     {
-        name: "Leslie Alexander",
-        profession: 'CEO, Parkview Int.Ltd',
-        comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
+        name: "Sarvodaya Compost Khad",
+        profession: 'Business',
+        comment: 'The team at TechYatra truly understood our values. They helped us effectively communicate the benefits of organic compost to a wider audience through our new website.',
         imgSrc: '/images/testimonial/user2.svg',
     },
     {
         name: "Cody Fisher",
         profession: 'CEO, Parkview Int.Ltd',
-        comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
+        comment: 'They delivered a modern, user-friendly website and app that perfectly fits our brand. Great experience, timely delivery, and excellent communication throughout the project.Looking forward to continued collaboration.',
         imgSrc: '/images/testimonial/user3.svg',
     },
 ]
@@ -107,8 +107,8 @@ export default class MultipleItems extends Component {
 
                     <div className="text-center">
                         <h3 className="text-4xl sm:text-6xl font-bold text-black my-3">See what others are saying.</h3>
-                        <h3 className="text-4xl sm:text-6xl font-bold text-black text-opacity-50 lg:mr-48 my-4">See what others are saying.</h3>
-                        <h3 className="text-4xl sm:text-6xl font-bold text-black text-opacity-25 lg:-mr-32 my-4">See what others are saying.</h3>
+                        {/* <h3 className="text-4xl sm:text-6xl font-bold text-black text-opacity-50 lg:mr-48 my-4">See what others are saying.</h3>
+                        <h3 className="text-4xl sm:text-6xl font-bold text-black text-opacity-25 lg:-mr-32 my-4">See what others are saying.</h3> */}
                     </div>
 
 
