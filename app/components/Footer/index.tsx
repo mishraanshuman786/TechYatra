@@ -5,24 +5,27 @@ import Link from "next/link";
 interface ProductType {
   id: number;
   section: string;
-  link: string[];
+  link: {label:string; href:string}[];
 }
 
 const products: ProductType[] = [
   {
     id: 1,
     section: "Company",
-    link: ["Home", "Services", "About", "Contact"],
+    link: [{ label: "Home", href: "/" },
+      { label: "Services", href: "/#services-section" },
+      { label: "About", href: "/#aboutus-section" },
+      { label: "Contact", href: "/#contact-section" },],
   },
   {
     id: 2,
     section: "Services",
     link: [
-      " Website Development",
-      "Mobile App Development",
-      "Desktop App Development",
-      "E-Commerce site Management",
-    ],
+      { label: "Website Development", href: "/services/website-development" },
+      { label: "Mobile App Development", href: "/services/mobile-app-development" },
+      { label: "Desktop App Development", href: "/services/desktop-app-development" },
+      { label: "E-Commerce site Management", href: "/services/ecommerce-management" },
+     ],
   },
 //   {
 //     id: 3,
@@ -32,7 +35,9 @@ const products: ProductType[] = [
   {
     id: 4,
     section: "Others",
-    link: ["Blogs", "Testimonials", "FAQ"],
+    link: [{ label: "Blogs", href: "/blog-section" },
+      { label: "Testimonials", href: "/#testimonial-section" },
+      { label: "FAQ", href: "/faq-section" },],
   },
 ];
 
@@ -90,13 +95,13 @@ const footer = () => {
                 {product.section}
               </p>
               <ul>
-                {product.link.map((link: string, index: number) => (
+                {product.link.map((item, index) => (
                   <li key={index} className="mb-5">
                     <Link
-                      href="/"
+                      href={item.href}
                       className="text-white text-lg font-normal mb-6 space-links"
                     >
-                      {link}
+                      {item.label}
                     </Link>
                   </li>
                 ))}
@@ -121,13 +126,13 @@ const footer = () => {
               </h3>
             </div>
             <div className="flex justify-center md:justify-end">
-              <Link href="/">
-                <h3 className="text-offwhite pr-6">Privacy policy</h3>
+              <Link href="/PrivacyPolicy"
+                 className="text-offwhite pr-6">Privacy policy
               </Link>
-              <Link href="/">
-                <h3 className="text-offwhite pl-6 border-solid border-l border-footer">
+              <Link href="/TermsAndConditions"
+                 className="text-offwhite pl-6 border-solid border-l border-footer">
                   Terms & conditions
-                </h3>
+                
               </Link>
             </div>
           </div>
