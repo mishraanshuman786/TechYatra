@@ -13,33 +13,33 @@ interface DataType {
 
 const postData: DataType[] = [
     {
-        profession: 'Co-founder',
-        name: 'John Doe',
+        profession: 'Backend Developer (.Net Framework)',
+        name: 'Dablu Ali',
         imgSrc: '/images/wework/avatar.svg',
     },
     {
-        profession: 'Co-founder',
-        name: 'John Doe',
+        profession: 'Full stack developer',
+        name: 'Anshuman Mishra',
         imgSrc: '/images/wework/avatar3.svg',
     },
     {
-        profession: 'Co-founder',
-        name: 'John Doe',
+        profession: 'Wrodpress Developer',
+        name: 'Aakash Kumar Maurya',
         imgSrc: '/images/wework/avatar4.svg',
     },
     {
-        profession: 'Co-founder',
-        name: 'John Doe',
+        profession: 'Operations and Strategy Manager',
+        name: 'Anju Shukla',
         imgSrc: '/images/wework/avatar.svg',
     },
     {
-        profession: 'Co-founder',
-        name: 'John Doe',
+        profession: 'Backend Developer',
+        name: 'Rishika Verma',
         imgSrc: '/images/wework/avatar3.svg',
     },
     {
-        profession: 'Co-founder',
-        name: 'John Doe',
+        profession: 'Frontend Developer',
+        name: 'Shikha Mishra',
         imgSrc: '/images/wework/avatar4.svg',
     },
 ]
@@ -109,7 +109,7 @@ export default class MultipleItems extends Component {
                 <Slider {...settings}>
                     {postData.map((items, i) => (
                         <div key={i}>
-                            <div className='bg-white m-3 py-14 my-10 text-center shadow-xl rounded-3xl'>
+                            <div className='bg-white m-3 py-14 my-10 text-center h-[450px] shadow-xl rounded-3xl'>
                                 <div className='relative'>
                                     <Image src={items.imgSrc} alt="gaby" width={182} height={182} className="inline-block m-auto" />
                                     <Image src={'/images/wework/linkedin.svg'} alt="greenbg" width={120} height={120} className=" absolute inline-block position-linkedin" />

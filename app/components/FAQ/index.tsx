@@ -11,19 +11,17 @@ const FAQ = () => {
                 <div className="mx-auto w-full max-w-5xl rounded-2xl bg-white py-8 px-6 mb-5">
                     <Disclosure>
                         {({ open }) => (
-                            <>
-                                <Disclosure.Button className="flex w-full justify-between rounded-lg px-4 py-2 text-left text-2xl font-medium">
-                                    <span>Can you design my site?</span>
-                                    <ChevronUpIcon
-                                        className={`${open ? 'rotate-180 transform' : ''
-                                            } h-5 w-5 text-purple-500`}
-                                    />
-                                </Disclosure.Button>
-                                <Disclosure.Panel className="px-4 pt-4 pb-2 text-base text-black font-normal opacity-50">
-                                    Craven omni memoria patriae zombieland clairvius narcisse <br /> religionis
-                                    sunt diri undead historiarum. Golums, zombies unrelenting <br /> et Raimi fascinati beheading.
-                                </Disclosure.Panel>
-                            </>
+                           <>
+  <Disclosure.Button className="flex w-full justify-between rounded-lg px-4 py-2 text-left text-2xl font-medium">
+    <span>Can you design my site?</span>
+    <ChevronUpIcon
+      className={`${open ? 'rotate-180 transform' : ''} h-5 w-5 text-purple-500`}
+    />
+  </Disclosure.Button>
+  <Disclosure.Panel className="px-4 pt-4 pb-2 text-base text-black font-normal opacity-50">
+    Absolutely! We offer custom website design services tailored to your brand and business goals. Whether you're starting from scratch or need a redesign, we'll collaborate with you to create a visually stunning and user-friendly site.
+  </Disclosure.Panel>
+</>
                         )}
                     </Disclosure>
                 </div>
@@ -31,19 +29,20 @@ const FAQ = () => {
                 <div className="mx-auto w-full max-w-5xl rounded-2xl bg-white py-8 px-6 mb-5">
                     <Disclosure as="div" className="mt-2">
                         {({ open }) => (
-                            <>
-                                <Disclosure.Button className="flex w-full justify-between rounded-lg px-4 py-2 text-left text-2xl font-medium">
-                                    <span>Can you code my site?</span>
-                                    <ChevronUpIcon
-                                        className={`${open ? 'rotate-180 transform' : ''
-                                            } h-5 w-5 text-purple-500`}
-                                    />
-                                </Disclosure.Button>
-                                <Disclosure.Panel className="px-4 pt-4 pb-2 text-base text-black font-normal opacity-50">
-                                    Craven omni memoria patriae zombieland clairvius narcisse <br /> religionis
-                                    sunt diri undead historiarum. Golums, zombies unrelenting <br /> et Raimi fascinati beheading.
-                                </Disclosure.Panel>
-                            </>
+                           <>
+  <Disclosure.Button className="flex w-full justify-between rounded-lg px-4 py-2 text-left text-2xl font-medium">
+    <span>Can you code my site?</span>
+    <ChevronUpIcon
+      className={`${open ? 'rotate-180 transform' : ''} h-5 w-5 text-purple-500`}
+    />
+  </Disclosure.Button>
+  <Disclosure.Panel className="px-4 pt-4 pb-2 text-base text-black font-normal opacity-50">
+    Yes! We can bring your designs to life with clean, responsive, and scalable code. <br />
+    Our development team works with modern frameworks and best practices <br />
+    to ensure your site performs smoothly across all devices.
+  </Disclosure.Panel>
+</>
+
                         )}
                     </Disclosure>
                 </div>
@@ -52,18 +51,19 @@ const FAQ = () => {
                     <Disclosure as="div" className="mt-2">
                         {({ open }) => (
                             <>
-                                <Disclosure.Button className="flex w-full justify-between rounded-lg px-4 py-2 text-left text-2xl font-medium">
-                                    <span>Where are you located?</span>
-                                    <ChevronUpIcon
-                                        className={`${open ? 'rotate-180 transform' : ''
-                                            } h-5 w-5 text-purple-500`}
-                                    />
-                                </Disclosure.Button>
-                                <Disclosure.Panel className="px-4 pt-4 pb-2 text-base text-black font-normal opacity-50">
-                                    Craven omni memoria patriae zombieland clairvius narcisse <br /> religionis
-                                    sunt diri undead historiarum. Golums, zombies unrelenting <br /> et Raimi fascinati beheading.
-                                </Disclosure.Panel>
-                            </>
+  <Disclosure.Button className="flex w-full justify-between rounded-lg px-4 py-2 text-left text-2xl font-medium">
+    <span>How do you work with clients remotely?</span>
+    <ChevronUpIcon
+      className={`${open ? 'rotate-180 transform' : ''} h-5 w-5 text-purple-500`}
+    />
+  </Disclosure.Button>
+  <Disclosure.Panel className="px-4 pt-4 pb-2 text-base text-black font-normal opacity-50">
+    We collaborate with clients entirely online using tools like Zoom, Slack, and Figma. <br />
+    From planning to final delivery, we maintain clear communication and provide regular <br />
+    updates to ensure everything runs smoothly—no matter where you're located.
+  </Disclosure.Panel>
+</>
+
                         )}
                     </Disclosure>
                 </div>
