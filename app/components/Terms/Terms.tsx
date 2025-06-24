@@ -6,8 +6,8 @@ const TermsAndConditions = () => {
       <h1 className="text-3xl font-bold mb-6">Terms & Conditions</h1>
 
       <p className="mb-4">
-        These Terms and Conditions ("Terms") govern your access to and use of the software development services
-        provided by [Your Company Name] ("Company", "we", or "us").
+        These Terms and Conditions (&quot;Terms&quot;) govern your access to and use of the software development services
+        provided by [Your Company Name] (&quot;Company&quot;, &quot;we&quot;, or &quot;us&quot;).
       </p>
 
       <h2 className="text-xl font-semibold mt-8 mb-2">1. Acceptance of Terms</h2>
