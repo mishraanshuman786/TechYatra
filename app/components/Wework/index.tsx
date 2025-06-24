@@ -109,7 +109,7 @@ export default class MultipleItems extends Component {
                 <Slider {...settings}>
                     {postData.map((items, i) => (
                         <div key={i}>
-                            <div className='bg-white m-3 py-14 my-10 text-center h-[450px] shadow-xl rounded-3xl'>
+                            <div className='bg-white m-3 py-14 my-10 text-center h-[470px] shadow-xl rounded-3xl'>
                                 <div className='relative'>
                                     <Image src={items.imgSrc} alt="gaby" width={182} height={182} className="inline-block m-auto" />
                                     <Image src={'/images/wework/linkedin.svg'} alt="greenbg" width={120} height={120} className=" absolute inline-block position-linkedin" />
