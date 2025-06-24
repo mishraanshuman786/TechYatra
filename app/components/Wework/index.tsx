@@ -20,7 +20,7 @@ const postData: DataType[] = [
     {
         profession: 'Full stack developer',
         name: 'Anshuman Mishra',
-        imgSrc: '/images/wework/avatar3.svg',
+        imgSrc: '/images/wework/avtar3.jpg',
     },
     {
         profession: 'Wrodpress Developer',
@@ -35,12 +35,12 @@ const postData: DataType[] = [
     {
         profession: 'Backend Developer',
         name: 'Rishika Verma',
-        imgSrc: '/images/wework/avatar3.svg',
+        imgSrc: '/images/wework/avtar4.jpg',
     },
     {
         profession: 'Frontend Developer',
         name: 'Shikha Mishra',
-        imgSrc: '/images/wework/avatar4.svg',
+        imgSrc: '/images/wework/avtar5.jpg',
     },
 ]
 
@@ -111,10 +111,10 @@ export default class MultipleItems extends Component {
                         <div key={i}>
                             <div className='bg-white m-3 py-14 my-10 text-center h-[470px] shadow-xl rounded-3xl'>
                                 <div className='relative'>
-                                    <Image src={items.imgSrc} alt="gaby" width={182} height={182} className="inline-block m-auto" />
-                                    <Image src={'/images/wework/linkedin.svg'} alt="greenbg" width={120} height={120} className=" absolute inline-block position-linkedin" />
+                                    <Image src={items.imgSrc} alt="gaby" width={150} height={150} className="inline-block m-auto" />
+                                    <Image src={'/images/wework/linkedin.svg'} alt="greenbg" width={80} height={80} className=" absolute inline-block position-linkedin" />
                                 </div>
-                                <h4 className='text-4xl font-bold pt-14'>{items.name}</h4>
+                                <h4 className='text-4xl font-bold pt-10'>{items.name}</h4>
                                 <h3 className='text-2xl font-normal pt-4 pb-2 opacity-50'>{items.profession}</h3>
                             </div>
                         </div>
