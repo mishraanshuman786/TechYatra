@@ -21,10 +21,10 @@ const products: ProductType[] = [
     id: 2,
     section: "Services",
     link: [
-      { label: "Website Development", href: "/services/website-development" },
-      { label: "Mobile App Development", href: "/services/mobile-app-development" },
-      { label: "Desktop App Development", href: "/services/desktop-app-development" },
-      { label: "E-Commerce site Management", href: "/services/ecommerce-management" },
+      { label: "Website Development", href: "/#services/website-development" },
+      { label: "Mobile App Development", href: "/#services/mobile-app-development" },
+      { label: "Desktop App Development", href: "/#services/desktop-app-development" },
+      { label: "E-Commerce site Management", href: "/#services/ecommerce-management" },
      ],
   },
 //   {
@@ -35,9 +35,9 @@ const products: ProductType[] = [
   {
     id: 4,
     section: "Others",
-    link: [{ label: "Blogs", href: "/blog-section" },
+    link: [{ label: "Blogs", href: "/#blog-section" },
       { label: "Testimonials", href: "/#testimonial-section" },
-      { label: "FAQ", href: "/faq-section" },],
+      { label: "FAQ", href: "/#faq-section" },],
   },
 ];
 
