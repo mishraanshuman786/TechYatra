@@ -20,7 +20,7 @@ const postData: DataType[] = [
     {
         profession: 'Full stack developer',
         name: 'Anshuman Mishra',
-        imgSrc: '/images/wework/avtar3.jpg',
+        imgSrc: '/images/wework/avatar3.jpg',
     },
     {
         profession: 'Wrodpress Developer',
@@ -106,20 +106,41 @@ export default class MultipleItems extends Component {
 
                 </div>
 
-                <Slider {...settings}>
-                    {postData.map((items, i) => (
-                        <div key={i}>
-                            <div className='bg-white m-3 py-14 my-10 text-center h-[470px] shadow-xl rounded-3xl'>
-                                <div className='relative'>
-                                    <Image src={items.imgSrc} alt="gaby" width={150} height={150} className="inline-block m-auto rounded-full" />
-                                    <Image src={'/images/wework/linkedin.svg'} alt="greenbg" width={80} height={80} className=" absolute inline-block position-linkedin" />
-                                </div>
-                                <h4 className='text-4xl font-bold pt-10'>{items.name}</h4>
-                                <h3 className='text-2xl font-normal pt-4 pb-2 opacity-50'>{items.profession}</h3>
-                            </div>
-                        </div>
-                    ))}
-                </Slider>
+    <Slider {...settings}>
+  {postData.map((items, i) => (
+    <div key={i}>
+      <div className="bg-white m-3 py-14 my-10 text-center h-[470px] shadow-xl rounded-3xl">
+        <div className="relative w-[150px] h-[150px] rounded-full mx-auto overflow-hidden">
+          {/* Profile Image */}
+          <Image
+            src={items.imgSrc}
+            alt="profile"
+            width={150}
+            height={150}
+            className="rounded-full object-cover w-full h-full"
+          />
+
+          {/* LinkedIn Logo at Bottom Center */}
+         {/* LinkedIn Logo at Bottom Center */}
+
+ 
+
+        </div>
+         <Image
+    src="/images/wework/linkedin.svg"
+    alt="linkedin icon"
+    width={80}
+    height={80}
+    className="drop-shadow-lg mx-auto -translate-y-6"
+  />
+
+        <h4 className="text-4xl font-bold pt-12">{items.name}</h4>
+        <h3 className="text-2xl font-normal pt-4 pb-2 opacity-50">{items.profession}</h3>
+      </div>
+    </div>
+  ))}
+</Slider>
+
 
             </div>
 
