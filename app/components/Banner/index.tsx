@@ -4,28 +4,32 @@ const Banner = () => {
   return (
     <div className="mx-auto max-w-7xl my-10 sm:py-10 px-6 lg:px-8">
       <div className="grid grid-cols-1 lg:grid-cols-2 my-16">
-        {/* COLUMN-1 */}
-
+        
+        {/* COLUMN 1 - TEXT & BUTTONS */}
         <div className="mx-auto sm:mx-0">
           <div className="py-3 text-center lg:text-start">
             <button className="text-blue bg-lightblue hover:shadow-xl text-sm md:text-lg font-bold px-6 py-1 rounded-3xl tracking-wider hover:text-white hover:bg-black">
-              FROM IDEAS TO EXECUTION 
+              FROM IDEAS TO EXECUTION
             </button>
           </div>
+
           <div className="py-3 text-center lg:text-start">
-            <h1 className="text-6xl lg:text-78xl font-bold text-darkpurple">
-              We Build  <br /> Smart, Scalable  <br /> Digital Solutions.
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-darkpurple leading-tight">
+              We Build <br /> Smart, Scalable <br /> Digital Solutions.
             </h1>
           </div>
+
+          {/* Enquiry Form Button */}
           <div className="my-7 text-center lg:text-start">
-            <button className="text-sm md:text-xl font-semibold hover:shadow-xl bg-blue text-white py-3 px-6 md:py-5 md:px-14 rounded-full hover:bg-hoblue">
-              Get Started
-            </button>
+            <a href="#enquiry-form">
+              <button className="text-sm md:text-xl font-semibold hover:shadow-xl bg-blue text-white py-3 px-6 md:py-5 md:px-14 rounded-full hover:bg-hoblue">
+                Enquiry Form
+              </button>
+            </a>
           </div>
         </div>
 
-        {/* COLUMN-2 */}
-
+        {/* COLUMN 2 - IMAGE */}
         <div className="lg:-m-24 lg:pt-20 hidden lg:block">
           <Image
             src="/images/banner/banner.svg"

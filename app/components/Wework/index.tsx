@@ -15,7 +15,7 @@ const postData: DataType[] = [
     {
         profession: 'Backend Developer (.Net Framework)',
         name: 'Dablu Ali',
-        imgSrc: '/images/wework/avatar.svg',
+        imgSrc: '/images/wework/avtar.jpg',
     },
     {
         profession: 'Full stack developer',
