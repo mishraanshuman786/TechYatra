@@ -31,8 +31,9 @@ const Drawer = ({ children, isOpen, setIsOpen }: DrawerProps) => {
                     <header className="px-4 py-4 flex items-center">
 
                         <div className="flex flex-shrink-0 items-center border-right">
+                              <img src="/images/extraImages/logo.jpg" alt="logo" width={60} height={60} />
                             <Link href="/" className='text-2xl font-semibold text-black'>
-                                Desgy Solutions
+                                TECHYATRA
                             </Link>
                         </div>
 

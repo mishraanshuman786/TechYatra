@@ -15,7 +15,7 @@ const products: ProductType[] = [
     link: [{ label: "Home", href: "/" },
       { label: "Services", href: "/#services-section" },
       { label: "About", href: "/#aboutus-section" },
-      { label: "Contact", href: "/#contact-section" },],
+      ],
   },
   {
     id: 2,
@@ -127,10 +127,10 @@ const Footer = () => {
               </h3>
             </div>
             <div className="flex justify-center md:justify-end">
-              <Link href="/#privacy-policy" 
+              <Link href="/#privacy" 
                  className="text-offwhite pr-6">Privacy policy
               </Link>
-              <Link href="/#Terms"
+              <Link href="/#terms"
                  className="text-offwhite pl-6 border-solid border-l border-footer">
                   Terms & conditions
                 

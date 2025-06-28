@@ -1,7 +1,7 @@
 "use client";
 
-import React , {useState} from 'react';
-import Image from 'next/image';
+import React, { useState } from "react";
+import Image from "next/image";
 
 const Banner = () => {
   const [showModal, setShowModal] = useState(false);
@@ -15,7 +15,6 @@ const Banner = () => {
   return (
     <div className="mx-auto max-w-7xl my-10 sm:py-10 px-6 lg:px-8">
       <div className="grid grid-cols-1 lg:grid-cols-2 my-16">
-        
         {/* COLUMN 1 - TEXT & BUTTONS */}
         <div className="mx-auto sm:mx-0">
           <div className="py-3 text-center lg:text-start">
@@ -54,9 +53,14 @@ const Banner = () => {
 
       {/* Modal */}
       {showModal && (
-        <div className="fixed inset-0 bg-black/40 backdrop-blur-sm flex justify-center items-center z-50">
-
-          <div className="bg-white rounded-xl p-6 w-[90%] max-w-md shadow-lg">
+        <div
+          className="fixed inset-0 bg-black/40 backdrop-blur-sm flex justify-center items-center z-50"
+          onClick={() => setShowModal(false)}
+        >
+          <div
+            className="bg-white rounded-xl p-6 w-[90%] max-w-md shadow-lg"
+            onClick={(e) => e.stopPropagation()}
+          >
             <h2 className="text-2xl font-bold mb-4 text-center">Enquiry Form</h2>
             <form onSubmit={handleSubmit}>
               <input
