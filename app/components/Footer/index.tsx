@@ -39,9 +39,10 @@ const products: ProductType[] = [
       { label: "Testimonials", href: "/#testimonial-section" },
       { label: "FAQ", href: "/#faq-section" },],
   },
+   
 ];
 
-const footer = () => {
+const Footer = () => {
   return (
     <div className="bg-bgblue -mt-40" id="first-section">
       <div className="mx-auto max-w-2xl pt-48 pb-16 px-4 sm:px-6 lg:max-w-7xl lg:px-4">
@@ -126,10 +127,10 @@ const footer = () => {
               </h3>
             </div>
             <div className="flex justify-center md:justify-end">
-              <Link href="/PrivacyPolicy"
+              <Link href="/#privacy-policy" 
                  className="text-offwhite pr-6">Privacy policy
               </Link>
-              <Link href="/TermsAndConditions"
+              <Link href="/#Terms"
                  className="text-offwhite pl-6 border-solid border-l border-footer">
                   Terms & conditions
                 
@@ -142,4 +143,4 @@ const footer = () => {
   );
 };
 
-export default footer;
+export default Footer;

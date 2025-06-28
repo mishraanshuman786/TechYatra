@@ -1,6 +1,17 @@
-import Image from "next/image";
+"use client";
+
+import React , {useState} from 'react';
+import Image from 'next/image';
 
 const Banner = () => {
+  const [showModal, setShowModal] = useState(false);
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    alert("Enquiry submitted successfully!");
+    setShowModal(false);
+  };
+
   return (
     <div className="mx-auto max-w-7xl my-10 sm:py-10 px-6 lg:px-8">
       <div className="grid grid-cols-1 lg:grid-cols-2 my-16">
@@ -21,11 +32,12 @@ const Banner = () => {
 
           {/* Enquiry Form Button */}
           <div className="my-7 text-center lg:text-start">
-            <a href="#enquiry-form">
-              <button className="text-sm md:text-xl font-semibold hover:shadow-xl bg-blue text-white py-3 px-6 md:py-5 md:px-14 rounded-full hover:bg-hoblue">
-                Enquiry Form
-              </button>
-            </a>
+            <button
+              onClick={() => setShowModal(true)}
+              className="text-sm md:text-xl font-semibold hover:shadow-xl bg-blue text-white py-3 px-6 md:py-5 md:px-14 rounded-full hover:bg-hoblue"
+            >
+              Enquiry Form
+            </button>
           </div>
         </div>
 
@@ -39,6 +51,50 @@ const Banner = () => {
           />
         </div>
       </div>
+
+      {/* Modal */}
+      {showModal && (
+        <div className="fixed inset-0 bg-black/40 backdrop-blur-sm flex justify-center items-center z-50">
+
+          <div className="bg-white rounded-xl p-6 w-[90%] max-w-md shadow-lg">
+            <h2 className="text-2xl font-bold mb-4 text-center">Enquiry Form</h2>
+            <form onSubmit={handleSubmit}>
+              <input
+                type="text"
+                placeholder="Your Name"
+                required
+                className="w-full border p-2 mb-3 rounded"
+              />
+              <input
+                type="email"
+                placeholder="Your Email"
+                required
+                className="w-full border p-2 mb-3 rounded"
+              />
+              <textarea
+                placeholder="Your Message"
+                required
+                className="w-full border p-2 mb-3 rounded"
+              />
+              <div className="flex justify-end gap-2 mt-4">
+                <button
+                  type="button"
+                  onClick={() => setShowModal(false)}
+                  className="bg-gray-400 text-black px-4 py-2 rounded hover:bg-gray-600"
+                >
+                  Cancel
+                </button>
+                <button
+                  type="submit"
+                  className="bg-blue-600 text-black px-4 py-2 rounded hover:bg-blue-700"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
